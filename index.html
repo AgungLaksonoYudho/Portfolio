@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Website Portofolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <!-- menu -->
+    <nav>
+        <div class="wrapper">
+            <div class="Logo"><img src="images/white_on_trans.png" alt="Logo"/></div>
+            <div class="hamburger"><i class="fa fa-bars"></i></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="">Project</a></li>
+                    <li><a href="">Gallery</a></li>
+                    <li><a href="">Experiences</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- hero/jumbotron -->
+    <header>
+        <div class="header-opacity"></div>
+        <div class="header-jumbotron">
+            <h4>Hi!, I'm Agung Laksono Yudho</h4>
+            <h5>I'm a <span>mechanical engineering</span> bachelor<br />Focusing on the field of <span>materials</span></h5>
+            <p>Solving problems, delivering impact.</p>
+            <a href="" class="button button-xl">View Portfolio</a>
+        </div>
+    </header>
+
+    <section id="statistic">
+        <div class="wrapper">
+            <div>
+                <p><i class="fa-solid fa-business-time"></i>4th</p>
+                <small>Years bachelor students</small>
+            </div>
+            <div>
+                <p><i class="fa-solid fa-user-graduate"></i>Bachelor degree</p>
+                <small>Universitas Muhammadiyah Riau</small>
+            </div>
+            <div>
+                <p><i class="fa-solid fa-diagram-project"></i>Status</p>
+                <small>Going to pursue postgraduate studies</small>
+            </div>
+        </div>
+    </section>
+
+    <!-- About me -->
+    <section id="About-me">
+        <div class="wrapper">
+            <h4>About me</h4>
+            <p>Engineering Clarity into Complexity</p>
+            <div>
+                <div class="photo"><img src="images/WhatsApp Image 2025-05-18 at 07.08.22_b22cf1cd.jpg" alt="About Me Photo" /></div>
+                <div class="desc">
+                    <p>For me, a solution isn't just about resolution — it's about creating impact.<br /><br />I focus on solutions that are relevant, sustainable, and meaningful to many people.</p>
+                    <div class="social">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="PDF-book">
+        <div class="wrapper">
+            <h4>PDF <span>Book</span></h4>
+            <p>Free mechanical engineering e-book for download</p>
+            <div class="grid">
+                <div class="item">
+                    <div class="Item-detail">
+                        <img src="images/dynamics.jpg" alt="Engineering Mechanics Dynamics" />
+                        <p>Engineering Mechanics Dynamics 15th ed.pdf</p>
+                        <div class="button-group">
+                            <a href="#" class="button-book"><i class="fa-solid fa-arrow-left"></i> Previous</a>
+                            <a href="#" class="button-b"><i class="fa-solid fa-arrow-right"></i> Next</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Toggle menu on hamburger click
+        const hamburger = document.querySelector(".hamburger");
+        const menu = document.querySelector(".menu");
+
+        hamburger.addEventListener("click", () => {
+            menu.classList.toggle("active");
+        });
+
+        // Optional: close menu when clicking a menu item on mobile
+        document.querySelectorAll(".menu ul li a").forEach(item => {
+            item.addEventListener("click", () => {
+                if (window.innerWidth <= 600) {
+                    menu.classList.remove("active");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
